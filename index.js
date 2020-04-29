@@ -17,5 +17,8 @@ function merge(array1, array2){
 }
 
 function mergeSort(array){
+  let middlePoint = array.length / 2;
+  let firstHalf = array.slice(0, middlePoint);
+  let secondHalf = array.slice(middlePoint, array.length);
 
 }
