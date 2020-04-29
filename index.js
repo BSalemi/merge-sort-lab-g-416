@@ -1,6 +1,6 @@
 
 function findMinAndRemoveSorted(array){
-  let min = array[i];
+  let min = array[0];
   let minIndex;
 
   for(let i = 0; i < array.length; i++){
