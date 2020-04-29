@@ -22,6 +22,8 @@ function merge(array1, array2){
   while(array1.length != 0 && array2.length != 0){
     if(minFirstHalf < minSecondHalf){
       sorted.push(array1.shift())
+    } else {
+      sorted.push(array2.shift())
     }
   }
 
