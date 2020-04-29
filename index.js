@@ -16,23 +16,19 @@ function findMinAndRemoveSorted(array){
 function merge(array1, array2){
   let minFirstHalf = array1[0];
   let minSecondHalf = array2[0];
-
+  let currentMin;
   let sorted = [];
 
   while(array1.length != 0 && array2.length != 0){
     if(minFirstHalf < minSecondHalf){
-      sorted.push(array1.shift())
+      currentMin = findMinAndRemoveSorted(array1);
+      sorted.push(currentMin)
     } else {
-      sorted.push(array2.shift())
+      currentMind = findMinAndRemoveSorted(array2);
+      sorted.push(currentMin)
     }
   }
-
-  if(minFirstHalf < minSecondHalf){
-    return minFirstHalf;
-  } else {
-    return minSecondHalf;
-  }
-
+  return sorted;
 }
 
 function mergeSort(array){
