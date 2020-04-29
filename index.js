@@ -24,7 +24,7 @@ function merge(array1, array2){
       currentMin = findMinAndRemoveSorted(array1);
       sorted.push(currentMin)
     } else {
-      currentMind = findMinAndRemoveSorted(array2);
+      currentMin = findMinAndRemoveSorted(array2);
       sorted.push(currentMin)
     }
   }
