@@ -10,7 +10,7 @@ function findMinAndRemoveSorted(array){
     }
   }
   array.splice(minIndex, 1);
-  return min; 
+  return min;
 }
 
 function merge(array){
