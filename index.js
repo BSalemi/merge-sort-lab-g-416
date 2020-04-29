@@ -13,7 +13,15 @@ function findMinAndRemoveSorted(array){
   return min;
 }
 
-function merge(array){
+function merge(array1, array2){
+  let minFirstHalf = array1[0];
+  let minSecondHalf = array2[0];
+
+  if(minFirstHalf < minSecondHalf){
+    return minFirstHalf
+  } else {
+    return minSecondHalf
+  }
 
 }
 
