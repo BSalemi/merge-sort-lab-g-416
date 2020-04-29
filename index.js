@@ -1,6 +1,6 @@
 
 function findMinAndRemoveSorted(array){
-  let min = 0;
+  let min = array[i];
   let minIndex;
 
   for(let i = 0; i < array.length; i++){
@@ -10,7 +10,7 @@ function findMinAndRemoveSorted(array){
     }
   }
   array.splice(minIndex, 1);
-  return min;
+  return min; 
 }
 
 function merge(array){
